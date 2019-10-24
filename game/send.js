@@ -5,7 +5,7 @@ export default class send extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            numbers: '',
+            numbers: 0,
         };
     }
     render() {

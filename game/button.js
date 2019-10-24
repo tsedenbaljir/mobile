@@ -4,19 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 export default class button extends Component {
     constructor(props) {
         super(props);
-        this.state = { color: props.color };
-    }
-    userLogin = () => {
-        alert(this.props.button);
-        this.setState({
-            time:this.props.time
-        })
-    }
+        this.state = { 
+            color: props.color,
+        };
+    } 
     render() {
         return (
-            <View style={[styles.body, { backgroundColor: this.state.color }]}>
-                <Text onPress={this.userLogin} >{this.props.button}</Text>
-            </View>
+                <Text style={[styles.body, { backgroundColor: this.state.color }]}>{this.props.button}</Text>
         );
     }
 }
